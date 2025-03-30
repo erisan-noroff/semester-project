@@ -31,6 +31,31 @@ nav ul {
     z-index: 1;
 }
 
+.exhibitions-dropdown {
+    position: relative;
+}
+
+.exhibitions-dropdown-menu {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 100%;
+    background-color: var(--color-background);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.exhibitions-dropdown:hover .exhibitions-dropdown-menu {
+    display: flex;
+}
+
+.exhibitions-dropdown-toggle::after {
+    content: "▼";
+    margin-left: 0.25rem;
+}
+
 .welcome {
     display: flex;
     flex-direction: column;
