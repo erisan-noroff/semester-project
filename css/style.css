@@ -2,3 +2,110 @@
 @import url("./typography.css");
 @import url("./utilities.css");
 @import url("./variables.css");
+
+body {
+    padding: 3.75rem 0;
+    background-color: var(--color-background);
+}
+
+header, main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+footer {
+    padding-top: 2.5rem;
+}
+
+nav ul {
+    display: flex;
+    padding: 2.5rem 5.125rem;
+    margin: 0 auto;
+    width: fit-content;
+    gap: 2.5rem;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards-container {
+    display: flex;
+    gap: 6rem;
+    align-items: stretch;
+}
+
+.cards-container img {
+    width: 18.75rem;
+    height: 26.5rem;
+}
+
+.card {
+    width: 18.75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card p {
+    flex-grow: 1
+}
+
+input {
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    font-family: var(--body-font), sans-serif;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+}
+
+button {
+    background: var(--color-button-background);
+    flex-grow: 0.5;
+    border: none;
+    border-radius: 0.625rem;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-background-newsletter);
+    padding: 1.5rem 0;
+    gap: 1rem;
+}
+
+.newsletter-sign-up-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.newsletter-sign-up-container input {
+    flex-grow: 1;
+}
+
+.contact-information-and-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding-top: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}

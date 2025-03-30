@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="UTF-8">
@@ -12,10 +12,70 @@
 </head>
 <body>
 <header>
+    <img src="./assets/images/cover.jpg" alt="">
+    <nav>
+        <ul>
+            <li><a class="active-tab" href="index.html">Home</a></li>
+            <li class="nav-divider"></li>
+            <li><a href="#">Visit</a></li>
+            <li class="nav-divider"></li>
+            <li><a href="#">Explore</a></li>
+            <li class="nav-divider"></li>
+            <li><a href="#">Exhibitions</a></li>
+            <li class="nav-divider"></li>
+            <li><a href="#">Get Involved</a></li>
+        </ul>
+    </nav>
 </header>
 <main>
+    <section class="welcome">
+        <h1>Welcome to the Community Science Museum</h1>
+        <p>Come join us at the Community Science Museum where we're commited to making science accessible to all!</p>
+    </section>
+    <section class="cards-container">
+        <div class="card">
+            <img src="./assets/images/card1.jpg" alt="">
+            <h2>Explore</h2>
+            <p>Ready for an adventure? Come visit our museum for tons of fun things to see and explore!</p>
+            <a>Find out more</a>
+        </div>
+        <div class="card">
+            <img src="./assets/images/card2.jpg" alt="">
+            <h2>Exhibition Spaces</h2>
+            <p>Explore the wonders of Cosmology, Evolution, Biology, Medicine, Robotics, AI, and Ecology – discover how these fields shape our world and future!</p>
+            <a>Find out more</a>
+        </div>
+        <div class="card">
+            <img src="./assets/images/card3.jpg" alt="">
+            <h2>Special Events</h2>
+            <p>We constantly have lots of new, exciting special events and exhibitions worth checking out!</p>
+            <a>Find out more</a>
+        </div>
+    </section>
 </main>
 <footer>
+    <section class="newsletter">
+        <p class="newsletter-heading m-0">Be the First to know</p>
+        <div class="flex flex-column">
+            <p class="m-0">Stay up-to-date with the latest from the Community Science Museum!</p>
+            <p class="m-0">Enter your email address below to sign up to our newsletter.</p>
+            <div class="newsletter-sign-up-container">
+                <input type="text" placeholder="name@example.com" aria-label="Email address">
+                <button type="button"> subscribe</button>
+            </div>
+        </div>
+    </section>
+    <section class="contact-information-and-copyright">
+        <div class="flex flex-column">
+            <p class="m-0">Henrik Wergelands gate 27,</p>
+            <p class="m-0">4666 Kristiansand, Norway</p>
+            <p>(+47) 22 22 55 55</p>
+            <p>contact@communitysciencemuseum.com</p>
+        </div>
+        <div>
+            <p>Copyright © 2025 Community Science Museum</p>
+        </div>
+    </section>
 </footer>
 </body>
 </html>
