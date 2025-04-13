@@ -9,6 +9,11 @@ body {
     background-color: var(--color-background);
 }
 
+main > section, main > section img {
+    width: 100%;
+    max-width: 68.25rem;
+}
+
 header, main {
     display: flex;
     flex-direction: column;
@@ -30,6 +35,10 @@ nav ul {
     position: sticky;
     top: 0;
     z-index: 1;
+}
+
+nav ul li {
+    list-style: none;
 }
 
 .exhibitions-dropdown {
@@ -55,12 +64,14 @@ nav ul {
 .exhibitions-dropdown-toggle::after {
     content: "▼";
     margin-left: 0.25rem;
+    display: inline-block;
 }
 
 .welcome {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .cards-container {
@@ -123,28 +134,39 @@ input:focus {
     flex-grow: 1;
 }
 
-.contact-information-and-copyright {
+.footer-info {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: baseline;
-    padding-top: 2.5rem;
+    text-align: center;
 }
 
-@media (max-width: 768px) {
+.responsive-alignment {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.opening-hours {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    width: max-content;
+    justify-self: normal;
+}
+
+.opening-hours li {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+@media (max-width: 1024px) {
     header img {
         padding-top: 1rem;
         width: 100%;
         height: auto;
-    }
-    
-    .welcome, .contact-information-and-copyright {
-        width: 80vw;
-        margin-inline: auto;
-    }
-
-    .contact-information-and-copyright {
-        flex-direction: column;
-        gap: 1rem;
     }
     
     nav ul {
@@ -169,6 +191,15 @@ input:focus {
     
     .newsletter-sign-up-container {
         flex-direction: column;
+    }
+    
+    .responsive-alignment {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .opening-hours {
+        justify-self: center;
     }
 }
 

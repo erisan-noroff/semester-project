@@ -81,13 +81,13 @@
 }
 
 /*Fix for when the menu is open but the browser is resized to a bigger width*/
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
     .sidebar {
         display: none;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .hamburger-menu {
         display: flex;
     }

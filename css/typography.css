@@ -4,10 +4,6 @@ nav ul li, h1, .newsletter-heading {
     font-family: var(--display-font), sans-serif;
 }
 
-nav ul li {
-    list-style: none;
-}
-
 nav ul li a {
     text-decoration: none;
     color: var(--color-nav-bar);
@@ -35,7 +31,6 @@ p, a:not(nav ul li a) {
 }
 
 .welcome p, .card p {
-    margin-top: 0;
     font-size: var(--font-size-md);
 }
 
