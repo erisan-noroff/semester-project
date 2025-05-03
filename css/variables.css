@@ -4,7 +4,9 @@
     --color-nav-bar: #0346D0;
     --color-background: #FFF;
     --color-background-newsletter: #92BEDB;
-    --color-button-background: #1A295A;
+    --color-button: #1A295A;
+    --color-button-hover: #2A3A70;
+    --color-button-active: #14203F;
     --color-button-text: #FFF;
     --display-font: "Montserrat";
     --body-font: "Poppins";

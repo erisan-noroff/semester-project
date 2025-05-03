@@ -30,8 +30,17 @@ p, a:not(nav ul li a) {
     background-color: var(--color-nav-bar);
 }
 
-.active-tab {
+nav ul li a:hover, nav ul li a.active-tab {
     text-decoration: underline;
+    text-underline-offset: 0.75rem;
+}
+
+nav ul li a:hover {
+    text-decoration-thickness: 0.125rem;
+}
+
+nav ul li a.active-tab {
+    text-decoration-thickness: 0.25rem;
 }
 
 .welcome p, .card p {
