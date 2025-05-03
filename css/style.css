@@ -124,6 +124,10 @@ input:focus {
     gap: 1rem;
 }
 
+.newsletter-heading {
+    margin: 0;
+}
+
 .newsletter-sign-up-container {
     display: flex;
     gap: 1rem;
